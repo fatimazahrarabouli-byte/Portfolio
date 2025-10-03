@@ -1,0 +1,674 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+  scroll-behavior: smooth; 
+  font-family:"Poppins", sans-serif ;
+}
+
+body{
+    background-color: rgb(25, 28, 35);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 0 0.5rem;
+    max-width: 1200px;
+}
+.logo{
+    width: 100px;      
+  height: auto;
+  display: block;
+  margin: 0;  
+}
+.navigation ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navigation a{ 
+    text-decoration: none;
+    color: #e2e8f0;
+}
+
+.navigation a:hover{ 
+    color: rgb(139, 92, 246);
+}
+
+hr { 
+    opacity: 20%;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+}
+
+.heroImg{
+    width: 500px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.heroSub{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.name {
+    font-size: 2rem;
+    color: #e2e8f0;
+}
+
+.title{
+    font-size: 3rem;
+    color: #4850aa;
+}
+
+.heroBtns{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.hireMe{
+    background-color: #4850aa;
+    color: #ffffff;
+    border-radius: 24px;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.5) ;
+}
+
+.cv{
+    background-color: rgba(71, 85, 105, 0.75);
+    color: #e2e8f0;
+    border-radius: 24px;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.5) ;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    backdrop-filter: blur(4px);
+}
+.arrow {
+  width: 150px; /* ajuste la largeur */
+  height: auto; /* garde les proportions */
+}
+
+.aboutMe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+    gap: 10rem;
+}
+.aboutMeImg{
+    width: 500px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.textContainer{
+    display:flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 2rem;
+}
+
+.textTitle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* aligne à gauche */
+  gap: 10px; /* espace entre l’icône et le texte */
+  font-size: 2rem;
+}
+
+.light {
+  width: 60px; /* taille de l’icône */
+  height: auto;
+  display: inline-block;
+  margin: 0; /* supprime le centrage */
+}
+
+.aboutName{
+    color: #e2e8f0;
+}
+
+.aboutTitle{
+    color: #4850aa;
+}
+
+.aboutMePar{
+    text-align: justify;
+    color: rgba(226, 232, 240, 0.75);
+}
+
+.resumeSection {
+    background-color: rgba(71, 85, 105, 0.2);
+    padding: 5rem 2rem;
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.resumeContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resumeHeader {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.resumeTitle {
+    font-size: 3rem;
+    color: #e2e8f0;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.resumeLine {
+    width: 60px;
+    height: 4px;
+    background-color: #4850aa;
+    margin: 0 auto 2rem auto;
+}
+
+.resumeDescription {
+    color: rgba(226, 232, 240, 0.75);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.resumeContent {
+    .resumeContent {
+    display: grid;
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 3rem; /* espace vertical */
+}
+
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    color: #e2e8f0;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+/* Summary Section */
+.summaryCard, .experienceCard ,.educationCard{
+    position: relative;
+    padding-left: 2rem;
+    border-left: 3px solid #4850aa;
+}
+
+.timelineIcon {
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #4850aa;
+    border-radius: 50%;
+    border: 3px solid rgb(25, 28, 35);
+    box-shadow: 0 0 0 3px #4850aa;
+}
+
+.summaryName, .experienceTitle {
+    color: #7494cd;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.summaryText {
+    color: rgba(226, 232, 240, 0.85);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+
+
+/* Education Section */
+.educationDate {
+    color: #4850aa;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+.educationTitle{
+     color: #7494cd;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.educationSchool {
+    color: rgba(226, 232, 240, 0.75);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.educationDetails {
+    list-style: none;
+    padding: 0;
+}
+
+.educationDetails li {
+    color: rgba(226, 232, 240, 0.85);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.educationDetails li::before {
+    content: "•";
+    color: #4850aa;
+    position: absolute;
+    left: 0;
+}
+.timelineIcon {
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #4850aa;
+    border-radius: 50%;
+    border: 3px solid rgb(25, 28, 35);
+    box-shadow: 0 0 0 3px #4850aa;
+}
+
+
+
+.contacteME{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.contactTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.Contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5rem;
+    gap :20rem;
+}
+
+.Contact h3, .Contact a{
+    color: #e2e8f0;
+    text-decoration: none;
+}
+
+.mailAndPhone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.socialMedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap :3rem;
+}
+
+.socialMedia a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: rgba(71, 85, 105, 0.5);
+    backdrop-filter: blur(4px);
+    padding: 1rem ;
+}
+
+.socialMedia img{
+    width: 24px;
+    height: 24px;
+}
+
+footer{
+    color: #e2e8f0;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+    @media (max-width: 480px) {
+    header {
+        padding: 0.5rem;
+    }
+    
+    .navigation ul {
+        gap: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .navigation a {
+        font-family: "Poppins", sans-serif;
+
+    }
+    .logo{
+    width: 50px;      
+  height: auto;
+  display: block;
+  margin: 0;  
+}
+
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .heroImg{
+        width: 400px;
+    }
+    .name ,.title{
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .hireMe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .cv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .heroBtns {
+        display: flex;
+        justify-content: center;     
+        align-items: center;         
+        gap: 1rem;
+    }
+    .aboutMe{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+    .aboutMePar {
+       width: 70%; /* ou une autre valeur comme 50%, selon ton design */
+       margin: 0 auto; /* centre horizontalement */
+       font-size: 0.9rem; /* réduit la taille du texte */
+       text-align: justify;
+       color: rgba(226, 232, 240, 0.75);
+    }
+    .textContainer {
+        margin: 0rem 1rem; 
+        gap: 0.5rem;       
+    }
+
+    .aboutName,.aboutTitle{
+    font-size: 2rem;
+    }
+
+  .textTitle {
+   
+    display: flex;
+  justify-content: center;
+  align-items: center; /* Si tu veux aussi centrer verticalement */
+  text-align: center;  /* Pour le texte */
+
+  }
+
+    .light{
+    width: 60px;
+    }
+.aboutMeImg{
+    width: 400px;
+}
+
+
+.resumeContent {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .resumeTitle {
+        font-size: 2.5rem;
+    }
+    
+    .sectionTitle {
+        font-size: 1.8rem;
+    }
+    
+    .resumeSection {
+        padding: 3rem 1rem;
+    }
+.contacteME{
+    margin: 10rem 5rem;
+    gap: 2rem;
+}
+
+.Contact{
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 0;
+}
+}
+/* NOUVELLE SECTION PROJECTS AMÉLIORÉE */
+.Myworks {
+    padding: 5rem 2rem;
+    margin: 5rem 0;
+    background: linear-gradient(135deg, rgba(71, 85, 105, 0.1) 0%, rgba(72, 80, 170, 0.1) 100%);
+}
+
+.worksContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ProjectTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.project-card {
+    background: linear-gradient(145deg, rgba(71, 85, 105, 0.3), rgba(30, 35, 45, 0.8));
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(72, 80, 170, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(72, 80, 170, 0.3);
+    border-color: rgba(72, 80, 170, 0.5);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-title {
+    color: #7494cd;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.project-description {
+    color: rgba(226, 232, 240, 0.85);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+.project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+    background: rgba(72, 80, 170, 0.3);
+    color: #e2e8f0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(72, 80, 170, 0.5);
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #4850aa, #7494cd);
+    color: white;
+    border: 2px solid transparent;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(72, 80, 170, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #e2e8f0;
+    border: 2px solid rgba(226, 232, 240, 0.3);
+}
+
+.btn-secondary:hover {
+    background: rgba(226, 232, 240, 0.1);
+    border-color: rgba(226, 232, 240, 0.6);
+}
+
+/* Media Queries pour la section Works */
+@media (max-width: 1024px){
+    .Myworks{
+        padding: 0;
+    }
+    .worksContainer{
+        padding: 5rem 0rem;
+        gap: 3rem;
+    }
+    .ProjectTitle{
+        margin-left: 1rem;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .Myworks{
+        padding: 1.5rem 0.5rem;
+        margin: 2rem 0;
+    }
+    
+    .ProjectTitle {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .projects-grid {
+        gap: 0.8rem;
+    }
+    
+    .project-image {
+        height: 120px;
+    }
+    
+    .project-info {
+        padding: 0.8rem;
+    }
+    
+    .project-title {
+        font-size: 1rem;
+    }
+    
+    .project-description {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+    
+    .tech-tag {
+        font-size: 0.7rem;
+        padding: 0.15rem 0.5rem;
+    }
+    
+    .project-link {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
