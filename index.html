@@ -6,16 +6,19 @@
     <link rel="stylesheet" href="styles.css"/>
     <title>Fatimazahra-Rabouli</title>
 </head>
-<body>
+<body class="homePage">
   <header>
     <img src="assets/imgs/logo.png" alt="Fatimazahra logo"  class="logo"/>
     <nav class="navigation">
         <ul>
-          <li><a href="#aboutMe" >About ME</a></li>
-          <li><a href="#Myworks" >My works</a></li>
-          <li><a href="#resume" >Resume</a></li>
-          <li><a href="#certificates" >Certificates</a></li>
-          <li><a href="#contacteME" >Contact</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html" >About me</a></li>
+          <li><a href="resume.html" >Resume</a></li>
+          <li><a href="experience.html" >Experience</a></li>
+          <li><a href="skills.html" >Skills</a></li>
+          <li><a href="works.html" >My works</a></li>
+          <li><a href="certificates.html" >Certificates</a></li>
+          <li><a href="contact.html" >Contact</a></li>
         </ul>
     </nav>
   </header>
@@ -26,33 +29,17 @@
     <h1 class="name">I'am Fatima Zahra</h1>
     <h1 class="title">Industrial Engineer — Methods & Digitalization</h1>
   <div class="heroBtns">
-   <a class="hireMe" href="#contacteME">Hire me</a>
-   <a class="cv" href="assets/Fatimazahrarabouli7.pdf" download>Download CV
+   <a class="hireMe" href="contact.html">Hire me</a>
+   <a class="cv" href="assets/Fatimazahrarabouli7.pdf" download>Download CV</a>
       <img src="assets/svg/download.svg" alt="download button"/>
      </a>
   </div>  
 </div> 
-   <img src="assets/imgs/hero-removebg-preview.png" alt="hero image" class="heroImg" />
+   <div class="heroVisual">
+     <p class="welcomeMessage">Welcome to my site ✦</p>
+     <img src="assets/imgs/hero-removebg-preview.png" alt="Fatima Zahra" class="heroImg" />
+   </div>
     </section>
-    <section class="aboutMe" id="aboutMe">
-      <img 
-      src="assets/imgs/about-me-photo.jpg"
-      alt="Fatima Zahra portrait"
-      class="aboutMeImg"
-      />
-      <div class="textContaimer"> 
-        <div class="textTitle">
-          <h1 class="aboutName">About</h1>
-          <h1 class="aboutTitle">me</h1>
-          <img src="assets/imgs/Capture_d_écran_2025-09-01_153821-removebg-preview.png" alt="lightbulb" class="light" />
-        </div>
-        <p class="aboutMePar">
-          I'm Fatima Zahra Rabouli, a Master's graduate in Smart Industry with a passion for automation, robotics, and digital innovation. I design and develop intelligent systems integrating modeling, sensors, and embedded communication. Curious, rigorous, and creative, I'm driven to contribute to innovative projects in connected industry and intelligent robotics.
-        </p>
-      </div>
-    </section>
-   
-
    <!-- NOUVELLE SECTION PROJECTS AMÉLIORÉE -->
 <section class="Myworks" id="Myworks">
   <div class="worksContainer">
@@ -256,7 +243,7 @@
       </li>
 
       <li class="project-card">
-        <img src="assets/imgs/Capture d'écran 2026-02-04 001349.png" alt="Firefighting Quadruped Robot Project" class="project-image">
+        <img src="assets/imgs/Capture d’écran 2026-02-04 001349.png" alt="Firefighting Quadruped Robot Project" class="project-image">
         <div class="project-info">
           <h3 class="project-title">Digital Twin of a Firefighting Quadruped Robot</h3>
           <p class="project-description">
@@ -310,26 +297,9 @@
         <img src="assets/imgs/dog.png" alt="Balloon Dog in Blender" class="project-image">
         <div class="project-info">
           <h3 class="project-title">Balloon Dog Creation in Blender</h3>
-          <p class="project-description">
-            A creative 3D modeling project in Blender focused on designing a balloon dog sculpture. 
-            The project uses primitive shapes (cylinders and spheres) combined with modifiers to 
-            replicate the twisted balloon aesthetic. Materials are configured with glossy shaders 
-            to achieve a realistic plastic look, and lighting is set up to highlight the playful 
-            and artistic nature of the model.
-          </p>
-          <div class="project-technologies">
-            <span class="tech-tag">Blender</span>
-            <span class="tech-tag">Python Scripting</span>
-            <span class="tech-tag">3D Modeling</span>
-            <span class="tech-tag">Materials & Shaders</span>
-            <span class="tech-tag">Rendering</span>
-            <span class="tech-tag">Creative Design</span>
-          </div>
-          <div class="project-links">
-            <a href="https://example.com/blender-balloon-dog" class="project-link btn-primary" target="_blank">
-              Coming soon →
-            </a>
-          </div>
+          <p class="project-description">A creative 3D modeling project in Blender focused on designing a balloon dog sculpture, using primitives, modifiers, glossy materials, and lighting.</p>
+          <div class="project-technologies"><span class="tech-tag">Blender</span><span class="tech-tag">Python Scripting</span><span class="tech-tag">3D Modeling</span><span class="tech-tag">Materials &amp; Shaders</span><span class="tech-tag">Rendering</span></div>
+          <div class="project-links"><button class="project-link btn-primary" type="button" disabled>Coming soon</button></div>
         </div>
       </li>
 
@@ -337,26 +307,9 @@
         <img src="assets/imgs/PV.png" alt="PV System with Sliding Mode Control" class="project-image">
         <div class="project-info">
           <h3 class="project-title">Sliding Mode Control of Grid-Connected PV System</h3>
-          <p class="project-description">
-            Implementation of a MATLAB/Simulink project focused on controlling a photovoltaic (PV) system 
-            connected to the grid using Sliding Mode Control (SMC). The work includes system modeling, 
-            converter design, MPPT strategy, and validation through simulation results. The project 
-            demonstrates robustness, fast response, and applicability to nonlinear systems, while addressing 
-            challenges such as chattering.
-          </p>
-          <div class="project-technologies">
-            <span class="tech-tag">MATLAB/Simulink</span>
-            <span class="tech-tag">Photovoltaic Systems</span>
-            <span class="tech-tag">Sliding Mode Control</span>
-            <span class="tech-tag">MPPT</span>
-            <span class="tech-tag">Power Electronics</span>
-            <span class="tech-tag">Grid Integration</span>
-          </div>
-          <div class="project-links">
-            <a href="https://example.com/pv-smc-project" class="project-link btn-primary" target="_blank">
-              Coming soon →
-            </a>
-          </div>
+          <p class="project-description">MATLAB/Simulink project for controlling a grid-connected photovoltaic system using Sliding Mode Control, MPPT strategy, and simulation validation.</p>
+          <div class="project-technologies"><span class="tech-tag">MATLAB/Simulink</span><span class="tech-tag">Photovoltaic Systems</span><span class="tech-tag">Sliding Mode Control</span><span class="tech-tag">MPPT</span><span class="tech-tag">Grid Integration</span></div>
+          <div class="project-links"><button class="project-link btn-primary" type="button" disabled>Coming soon</button></div>
         </div>
       </li>
 
@@ -402,12 +355,12 @@
             <h4 class="experienceTitle">Intern - Industrial Engineering Department (PFE)</h4>
             <div class="experienceDate">2026 · Kénitra, Morocco</div>
             <div class="experienceCompany">Yazaki Morocco Kénitra (YMK)</div>
-            <div class="experienceRole"><strong>Project:</strong> Digitalization of the Kanban System for Ford Production Lines at Yazaki</div>
+            <div class="experienceRole"><strong>Project:</strong> Digitalization of the Kanban System for Ford Production Lines (Ford V710, Zone P3)</div>
             <ul class="experienceDetails">
-              <li>Analysis and optimization of production flows by identifying bottlenecks</li>
-              <li>Created an application called Kanban Production to digitalize the manual Kanban workflow</li>
-              <li>Focus on Methods & Digitalization for production efficiency</li>
+              <li>Mapped the manual Kanban workflow, analysed production delays, and developed KanbanProd to digitalise the process.</li>
+              <li><strong>Result:</strong> cycle time reduced from 79s to 57.5s, with estimated annual savings of ~187,600 €.</li>
             </ul>
+            <a class="experienceDetailsButton" href="experience.html">View all details →</a>
           </div>
         </div>
 
@@ -426,12 +379,6 @@
             <h4 class="educationTitle">Master's in Smart Industry</h4>
             <div class="educationDate">2024 – 2026 · Graduated with Honours (Mention Bien)</div>
             <div class="educationSchool">Université Sidi Mohamed Ben Abdellah, Fès, Morocco</div>
-            <ul class="educationDetails">
-              <li>Specialization in automation, robotics, digital modeling, and industrial systems</li>
-              <li>Completed projects in IoT, embedded programming, and production line optimization</li>
-              <li>Applied AI/ML techniques for predictive maintenance and smart system design</li>
-              <li><strong>Key Tools:</strong> Python, MATLAB, Arduino, TwinCAT, SolidWorks</li>
-            </ul>
           </div>
         </div>
 
@@ -442,12 +389,6 @@
             <h4 class="educationTitle">Licence en Sciences de la Matière Physique</h4>
             <div class="educationDate">2023 – 2024 · Mention A. Bien</div>
             <div class="educationSchool">Faculté des Sciences Dhar El Mahraz, Fès</div>
-            <ul class="educationDetails">
-              <li>Specialized in physics with focus on electronics and scientific analysis</li>
-              <li>Strong foundations in electromagnetism, signal processing, and embedded systems</li>
-              <li>Completed projects in autonomous robotics, digital twin modeling, and virtual machine design</li>
-              <li><strong>Key Tools:</strong> Python, C++, MATLAB, Blender, Excel</li>
-            </ul>
           </div>
         </div>
 
@@ -458,11 +399,6 @@
             <h4 class="educationTitle">DEUG in Physical Sciences</h4>
             <div class="educationDate">2020 – 2023 · Mention A. Bien</div>
             <div class="educationSchool">Faculté des Sciences, Fès</div>
-            <ul class="educationDetails">
-              <li>Built strong foundation in physics, mathematics, and scientific analysis</li>
-              <li>Prepared for advanced studies in engineering and automation</li>
-              <li>Developed analytical thinking and complex problem-solving skills</li>
-            </ul>
           </div>
         </div>
 
@@ -473,14 +409,11 @@
             <h4 class="educationTitle">Baccalauréat</h4>
             <div class="educationDate">2020 · Mention A. Bien</div>
             <div class="educationSchool">Lycée Moulay Idriss, Fès</div>
-            <ul class="educationDetails">
-              <li>International curriculum specialization in Physics (French option)</li>
-              <li>Foundation for scientific and technical studies</li>
-            </ul>
           </div>
         </div>
 
       </div> <!-- /educationGrid -->
+      <a class="experienceDetailsButton" href="resume.html">View all education details →</a>
     </div> <!-- /educationSection -->
 
   </div> <!-- /resumeContainer -->
@@ -496,26 +429,36 @@
 
     <div class="certificatesGrid">
       <article class="certificateCard">
+        <div class="certificateIcon">AI</div>
+        <h3 class="certificateTitle">AI Systems Workshop</h3>
+        <p class="certificateDescription">FSDM Robotics Club — 7–8 February 2025.</p>
+      </article>
+
+      <article class="certificateCard">
+        <div class="certificateIcon">R</div>
+        <h3 class="certificateTitle">African Robotic Brains 2025</h3>
+        <p class="certificateDescription">Certificate of participation awarded by Club CRIAM.</p>
+      </article>
+
+      <article class="certificateCard">
         <div class="certificateIcon">C</div>
         <h3 class="certificateTitle">Introduction to Cloud Computing</h3>
         <p class="certificateDescription">IBM course offered through Coursera - November 2025</p>
-        <a href="assets/certificates/cloud-computing.pdf" class="certificateLink" target="_blank">View certificate</a>
       </article>
 
       <article class="certificateCard">
         <div class="certificateIcon">E</div>
         <h3 class="certificateTitle">Excel Skills for Business: Essentials</h3>
         <p class="certificateDescription">Macquarie University course offered through Coursera - July 2026</p>
-        <a href="assets/certificates/excel-skills-for-business.pdf" class="certificateLink" target="_blank">View certificate</a>
       </article>
 
       <article class="certificateCard">
         <div class="certificateIcon">A</div>
         <h3 class="certificateTitle">The Arduino Platform and C Programming</h3>
         <p class="certificateDescription">University of California, Irvine course offered through Coursera - November 2025</p>
-        <a href="assets/certificates/arduino-c-programming.pdf" class="certificateLink" target="_blank">View certificate</a>
       </article>
     </div>
+    <a class="experienceDetailsButton" href="certificates.html">View all certificates →</a>
   </div>
 </section>
 
@@ -545,13 +488,38 @@
         <img src="assets/svg/github.svg" alt="my Github account">
       </a>
     </div>
+    <form class="contactForm" id="contactForm">
+      <h2>Send me a message</h2>
+      <p>Have a project or an idea? I would be happy to discuss it with you.</p>
+      <label for="senderName">Your name</label>
+      <input id="senderName" name="name" type="text" placeholder="Your Name" required>
+      <label for="senderEmail">Your email</label>
+      <input id="senderEmail" name="email" type="email" placeholder="Your Email (for my reply)" required>
+      <label for="senderMessage">Your message</label>
+      <textarea id="senderMessage" name="message" rows="7" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message <span aria-hidden="true">✈</span></button>
+    </form>
   </section>
 
 <hr />
 
 <footer>
   <p>Built by Fatima Zahra — passion for innovation & digital transformation.</p>
+  <div class="footerContactLinks"><a href="mailto:fatimazahrarabouli@gmail.com" aria-label="Email"><img src="assets/svg/Email.svg" alt=""></a><a href="https://www.linkedin.com/in/fatima-zahra-rabouli" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="assets/svg/linkedin.svg" alt=""></a><a href="https://github.com/fatimazahrarabouli-byte/" target="_blank" rel="noopener" aria-label="GitHub"><img src="assets/svg/github.svg" alt=""></a></div>
 </footer>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (!this.checkValidity()) { this.reportValidity(); return; }
+    const name = document.getElementById('senderName').value;
+    const email = document.getElementById('senderEmail').value;
+    const message = document.getElementById('senderMessage').value;
+    const subject = encodeURIComponent('Portfolio contact from ' + name);
+    const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+    window.location.href = 'mailto:fatimazahrarabouli@gmail.com?subject=' + subject + '&body=' + body;
+  });
+</script>
 
 </body>
 </html>

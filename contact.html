@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="styles.css"><title>Contact | Fatima Zahra Rabouli</title></head>
+<body>
+  <header><a href="index.html"><img src="assets/imgs/logo.png" alt="Fatimazahra logo" class="logo"></a><nav class="navigation"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About me</a></li><li><a href="resume.html">Resume</a></li><li><a href="experience.html">Experience</a></li><li><a href="works.html">My works</a></li><li><a href="certificates.html">Certificates</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul></nav></header><hr>
+  <main class="page-main"><section class="contacteME page-container"><div class="contactTitle"><h1 class="aboutName">Contact</h1><h1 class="aboutTitle">me</h1></div><div class="Contact"><div class="emailAndPhone"><img src="assets/svg/Email.svg" alt="Email"><a href="mailto:fatimazahrarabouli@gmail.com"><h3>fatimazahrarabouli@gmail.com</h3></a></div><div class="emailAndPhone"><img src="assets/svg/phone.svg" alt="Phone"><h3>+212 771 178 591</h3></div></div><div class="socialMedia"><a href="https://www.linkedin.com/in/fatima-zahra-rabouli" target="_blank" rel="noopener"><img src="assets/svg/linkedin.svg" alt="LinkedIn"></a><a href="https://github.com/fatimazahrarabouli-byte/" target="_blank" rel="noopener"><img src="assets/svg/github.svg" alt="GitHub"></a></div><form class="contactForm" id="contactForm"><h2>Send me a message</h2><p>Have a project or an idea? I would be happy to discuss it with you.</p><label for="senderName">Your name</label><input id="senderName" name="name" type="text" placeholder="Your Name" required><label for="senderEmail">Your email</label><input id="senderEmail" name="email" type="email" placeholder="Your Email (for my reply)" required><label for="senderMessage">Your message</label><textarea id="senderMessage" name="message" rows="7" placeholder="Your Message" required></textarea><button type="submit">Send Message <span aria-hidden="true">✈</span></button><p class="formSuccess" id="formSuccess" role="status">✓ Message sent successfully!</p></form><a class="back-home" href="index.html">← Back to home</a></section></main>
+  <footer><p>Built by Fatima Zahra — passion for innovation &amp; digital transformation.</p><div class="footerContactLinks"><a href="mailto:fatimazahrarabouli@gmail.com" aria-label="Email"><img src="assets/svg/Email.svg" alt=""></a><a href="https://www.linkedin.com/in/fatima-zahra-rabouli" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="assets/svg/linkedin.svg" alt=""></a><a href="https://github.com/fatimazahrarabouli-byte/" target="_blank" rel="noopener" aria-label="GitHub"><img src="assets/svg/github.svg" alt=""></a></div></footer>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (!this.checkValidity()) { this.reportValidity(); return; }
+      const name = document.getElementById('senderName').value;
+      const email = document.getElementById('senderEmail').value;
+      const message = document.getElementById('senderMessage').value;
+      const subject = encodeURIComponent('Portfolio contact from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+      document.getElementById('formSuccess').classList.add('isVisible');
+      this.reset();
+      setTimeout(() => { window.location.href = 'mailto:fatimazahrarabouli@gmail.com?subject=' + subject + '&body=' + body; }, 500);
+    });
+  </script>
+</body></html>
