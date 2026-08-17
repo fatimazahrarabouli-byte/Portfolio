@@ -1424,6 +1424,16 @@ img {
     box-shadow: 0 8px 16px rgba(72, 80, 170, 0.4);
 }
 
+/* Shared CV download label. */
+.certificateLink[download] {
+    font-size: 0;
+}
+
+.certificateLink[download]::after {
+    content: "My CV";
+    font-size: 0.9rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -1462,6 +1472,7 @@ img {
     }
     
     .projects-grid {
+        grid-template-columns: 1fr;
         gap: 0.8rem;
     }
     
@@ -1491,6 +1502,30 @@ img {
         padding: 0.4rem 0.8rem;
         font-size: 0.8rem;
     }
+}
+
+/* Mobile safety: prevents horizontal overflow on small screens. */
+@media (max-width: 480px) {
+    body { overflow-x: hidden; }
+
+    .page-main { padding: 2.5rem 1rem; }
+
+    .heroImg,
+    .aboutMeImg,
+    .heroVisual { width: min(100%, 400px); }
+
+    .contacteME {
+        width: 100%;
+        margin: 3rem 0;
+        padding-inline: 1rem;
+    }
+
+    .aboutMePar { width: 100%; }
+    .navigation ul { width: 100%; }
+
+    .certificateCard,
+    .skillCard,
+    .project-card { min-width: 0; }
 }
 
 /* Animation 3D du personnage de la page d'accueil */
