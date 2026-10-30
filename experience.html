@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Experience | Fatima Zahra Rabouli</title>
+</head>
+<body>
+  <header><a href="index.html"><img src="assets/imgs/logo.png" alt="Fatimazahra logo" class="logo"></a><nav class="navigation"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About me</a></li><li><a href="resume.html">Resume</a></li><li><a href="experience.html" aria-current="page">Experience</a></li><li><a href="works.html">My works</a></li><li><a href="certificates.html">Certificates</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
+  <hr>
+  <main class="page-main"><section class="resumeSection"><div class="resumeContainer">
+    <div class="resumeHeader"><h1 class="resumeTitle">Professional Experience</h1><div class="resumeLine"></div><p class="resumeDescription">Projects and contributions in industrial engineering and digital transformation.</p></div>
+    <div class="experienceSection"><div class="experienceCard"><div class="timelineIcon"></div><div class="experienceContent">
+      <h2 class="experienceTitle">Intern - Industrial Engineering Department (PFE)</h2>
+      <div class="experienceDate">2026 · Kénitra, Morocco</div><div class="experienceCompany">Yazaki Morocco Kénitra (YMK)</div><div class="experienceRole"><strong>Project:</strong> Digitalization of the Kanban System for Ford Production Lines (Ford V710, Zone P3)</div>
+      <ul class="experienceDetails"><li><strong>Define:</strong> Mapped the manual Kanban card process and identified bottlenecks through Gemba Walks.</li><li><strong>Measure:</strong> Collected cycle time and Takt Time data across the production line.</li><li><strong>Analyze:</strong> Used Yamazumi charts and root-cause analysis to identify delays and line imbalance.</li><li><strong>Improve:</strong> Designed and developed <strong>KanbanProd</strong>, a desktop application built with JavaScript, HTML, CSS and Electron.</li><li><strong>Control:</strong> Validated the solution on the shop floor with production stakeholders.</li><li><strong>Results:</strong> Reduced cycle time from 79s to 57.5s, generating estimated annual savings of ~187,600 €.</li></ul>
+      <div class="appGallery"><h3 class="appGalleryTitle">KanbanProd — Application Screenshots</h3><div class="appGalleryGrid experienceScreens"><figure class="appGalleryItem"><button class="imageZoomTrigger" type="button" aria-label="Enlarge KanbanProd login screen"><img src="assets/imgs/kanbanprod-login.png" alt="KanbanProd login screen"></button><figcaption>Operator authentication</figcaption></figure><figure class="appGalleryItem"><button class="imageZoomTrigger" type="button" aria-label="Enlarge KanbanProd sequence preparation"><img src="assets/imgs/kanbanprod-sequence.png" alt="KanbanProd sequence preparation"></button><figcaption>Kanban sequence preparation</figcaption></figure><figure class="appGalleryItem"><button class="imageZoomTrigger" type="button" aria-label="Enlarge production tracking"><img src="assets/imgs/kanbanprod-production.png" alt="Production tracking"></button><figcaption>Live production tracking</figcaption></figure></div></div>
+    </div></div></div>
+    <div class="beforeAfter professionalComparison"><h3 class="appGalleryTitle">System Transformation</h3><div class="beforeAfterGrid"><figure class="beforeAfterItem"><img src="assets/imgs/kanban-system-before.png" alt="Manual Kanban system before digitalization"><figcaption>Organisation manuelle des cartes Kanban sur la ligne de production.</figcaption></figure><figure class="beforeAfterItem"><img src="assets/imgs/kanban-system-after.png" alt="Digital KanbanProd system after digitalization"><figcaption>Poste KanbanProd digitalisé avec suivi et impression automatisés.</figcaption></figure></div></div>
+    <div class="beforeAfter cardComparison"><h3 class="appGalleryTitle">Kanban Card — Before / After</h3><div class="beforeAfterGrid"><figure class="beforeAfterItem"><img src="assets/imgs/carte-kanban-manuelle.png" alt="Manual physical Kanban card"><figcaption>Avant — Carte Kanban physique.</figcaption></figure><figure class="beforeAfterItem"><img src="assets/imgs/kanbanprod-ticket.png" alt="Digital Kanban ticket printed by KanbanProd"><figcaption>Après — Carte digitale générée par KanbanProd.</figcaption></figure></div></div>
+    <div class="imageLightbox" aria-hidden="true" role="dialog" aria-label="Image enlarged"><button class="imageLightboxClose" type="button" aria-label="Close enlarged image">×</button><img src="" alt=""></div>
+    <a class="back-home" href="index.html">← Back to home</a>
+  </div></section></main>
+  <footer><p>Built by Fatima Zahra — passion for innovation &amp; digital transformation.</p><div class="footerContactLinks"><a href="mailto:fatimazahrarabouli@gmail.com" aria-label="Email"><img src="assets/svg/Email.svg" alt=""></a><a href="https://www.linkedin.com/in/fatima-zahra-rabouli" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="assets/svg/linkedin.svg" alt=""></a><a href="https://github.com/fatimazahrarabouli-byte/" target="_blank" rel="noopener" aria-label="GitHub"><img src="assets/svg/github.svg" alt=""></a></div></footer>
+  <script>
+    const lightbox = document.querySelector('.imageLightbox');
+    const lightboxImage = lightbox.querySelector('img');
+    const closeLightbox = () => { lightbox.classList.remove('isOpen'); lightbox.setAttribute('aria-hidden', 'true'); };
+    document.querySelectorAll('.imageZoomTrigger img').forEach((image) => image.closest('button').addEventListener('click', () => { lightboxImage.src = image.src; lightboxImage.alt = image.alt; lightbox.classList.add('isOpen'); lightbox.setAttribute('aria-hidden', 'false'); }));
+    lightbox.querySelector('.imageLightboxClose').addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (event) => { if (event.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeLightbox(); });
+  </script>
+</body>
+</html>
