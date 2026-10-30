@@ -1234,6 +1234,218 @@ img {
     border-color: rgba(226, 232, 240, 0.6);
 }
 
+/* Power BI project detail page */
+.project-detail {
+    max-width: 1180px;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.project-kicker {
+    color: #7494cd;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.7rem;
+}
+
+.project-dashboard {
+    display: block;
+    width: 100%;
+    margin: 2.5rem auto;
+    border: 1px solid rgba(116, 148, 205, 0.55);
+    border-radius: 16px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+}
+
+.project-cover-image {
+    max-height: 540px;
+    object-fit: cover;
+}
+
+.project-demo {
+    margin: 2.5rem 0;
+    text-align: center;
+}
+
+.project-demo h2 {
+    color: #7494cd;
+    margin-bottom: 0.6rem;
+}
+
+.project-demo p {
+    color: rgba(226, 232, 240, 0.85);
+    margin-bottom: 1.25rem;
+}
+
+.project-demo-video {
+    display: block;
+    width: min(100%, 900px);
+    margin: 0 auto;
+    border: 1px solid rgba(116, 148, 205, 0.55);
+    border-radius: 16px;
+    background: #101827;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+}
+
+.project-simulation-result {
+    max-width: 1000px;
+    margin: 2.5rem auto;
+}
+
+.project-simulation-result h2 {
+    color: #7494cd;
+    margin-bottom: 0.85rem;
+}
+
+.project-simulation-result p {
+    color: rgba(226, 232, 240, 0.9);
+    line-height: 1.75;
+}
+
+.project-about {
+    max-width: 920px;
+    margin: 2.5rem auto;
+    padding: 1.75rem;
+    border-left: 4px solid #7494cd;
+    border-radius: 0 16px 16px 0;
+    background: rgba(30, 35, 45, 0.65);
+}
+
+.project-about h2 {
+    color: #7494cd;
+    margin-bottom: 0.85rem;
+}
+
+.project-about p {
+    color: rgba(226, 232, 240, 0.9);
+    line-height: 1.75;
+    margin-bottom: 0.8rem;
+}
+
+.project-about p:last-child {
+    margin-bottom: 0;
+}
+
+.project-detail-section {
+    max-width: 920px;
+    margin: 2.5rem auto;
+}
+
+.project-detail-section h2 {
+    color: #7494cd;
+    margin-bottom: 1rem;
+}
+
+.project-detail-section p,
+.project-detail-section li {
+    color: rgba(226, 232, 240, 0.9);
+    line-height: 1.75;
+}
+
+.project-detail-section ul,
+.project-detail-section ol {
+    padding-left: 1.4rem;
+}
+
+.project-detail-section li + li {
+    margin-top: 0.55rem;
+}
+
+.project-presentation {
+    max-width: 920px;
+    margin: 2.5rem auto;
+    padding: 1.75rem;
+    text-align: center;
+    border: 1px solid rgba(116, 148, 205, 0.35);
+    border-radius: 16px;
+    background: rgba(30, 35, 45, 0.65);
+}
+
+.project-presentation h2 {
+    color: #7494cd;
+    margin-bottom: 0.75rem;
+}
+
+.project-presentation p {
+    color: rgba(226, 232, 240, 0.9);
+    line-height: 1.7;
+    margin: 0 auto 1.25rem;
+    max-width: 680px;
+}
+
+.assistive-projects {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    margin: 2.5rem 0 3rem;
+}
+
+.assistive-project-card {
+    overflow: hidden;
+    border: 1px solid rgba(116, 148, 205, 0.3);
+    border-radius: 18px;
+    background: rgba(30, 35, 45, 0.65);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.2);
+}
+
+.assistive-project-card img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.assistive-project-content {
+    padding: 1.5rem;
+}
+
+.assistive-project-content h2 {
+    color: #7494cd;
+    margin: 0 0 0.8rem;
+}
+
+.assistive-project-content > p:not(.project-kicker) {
+    color: rgba(226, 232, 240, 0.9);
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+.project-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    margin: 2.5rem 0;
+}
+
+.project-detail-grid > div {
+    padding: 1.5rem;
+    border: 1px solid rgba(116, 148, 205, 0.25);
+    border-radius: 16px;
+    background: rgba(30, 35, 45, 0.65);
+}
+
+.project-detail-grid h2 {
+    color: #7494cd;
+    margin-bottom: 0.8rem;
+}
+
+.project-detail-grid p,
+.project-detail-grid li {
+    color: rgba(226, 232, 240, 0.9);
+    line-height: 1.7;
+}
+
+.project-detail-grid ul {
+    padding-left: 1.2rem;
+}
+
+@media (max-width: 700px) {
+    .project-detail { padding: 2.5rem 1.25rem 4rem; }
+    .project-detail-grid { grid-template-columns: 1fr; gap: 1rem; }
+    .assistive-projects { grid-template-columns: 1fr; gap: 1.25rem; }
+}
+
 .certificatesSection {
     padding: 5rem 2rem;
     margin: 5rem 0;

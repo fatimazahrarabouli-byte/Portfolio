@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Assistive Technology for Inclusion | Fatima Zahra Rabouli</title>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="assets/imgs/logo.png" alt="Fatimazahra logo" class="logo"></a>
+    <nav class="navigation"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About me</a></li><li><a href="resume.html">Resume</a></li><li><a href="experience.html">Experience</a></li><li><a href="works.html" aria-current="page">My works</a></li><li><a href="certificates.html">Certificates</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  </header>
+  <hr>
+  <main class="page-main">
+    <article class="project-detail page-container">
+      <div class="page-heading">
+        <p class="project-kicker">Inclusion project</p>
+        <h1>Assistive Technology <span class="aboutTitle">for Inclusion</span></h1>
+        <p>An accessible communication solution that combines electronic hardware with AI assistance to support deaf and mute people.</p>
+      </div>
+      <img class="project-dashboard project-cover-image" src="assets/imgs/20260104_2252_Inclusion IoT Visuelle_simple_compose_01ke5fx87cfxna2f9zxj678b1r.png" alt="Assistive Technology for Inclusion project illustration">
+      <section class="project-about">
+        <h2>About the project</h2>
+        <p>Assistive Technology for Inclusion is an accessibility focused project designed to make everyday communication easier for deaf and mute people. It brings together an electronic system and an AI telephone assistant to provide clear, accessible communication support.</p>
+        <p>The electronic module uses an Arduino and LCD display to deliver visual information, while the AI assistant supports conversational interactions. Together, these two components demonstrate how embedded systems and artificial intelligence can create a more inclusive user experience.</p>
+      </section>
+      <section class="project-detail-section">
+        <h2>Project objectives</h2>
+        <ul>
+          <li>Design an accessible communication solution for deaf and mute people.</li>
+          <li>Develop an electronic system that provides clear visual information in real time.</li>
+          <li>Integrate an AI assistant to support more natural and accessible interactions.</li>
+          <li>Combine hardware and software components in one inclusive solution.</li>
+          <li>Demonstrate the value of technology for everyday accessibility and social inclusion.</li>
+        </ul>
+      </section>
+      <section class="project-detail-section">
+        <h2>Technologies used</h2>
+        <div class="project-technologies"><span class="tech-tag">ESP32</span><span class="tech-tag">Arduino</span><span class="tech-tag">LCD Display</span><span class="tech-tag">ThingSpeak</span><span class="tech-tag">Telegram Bot</span><span class="tech-tag">Voice Assistance</span><span class="tech-tag">Accessibility</span></div>
+      </section>
+      <section class="project-detail-section">
+        <h2>System architecture</h2>
+        <p>The system connects an ESP32 master, an Arduino slave and an LCD display to detect events and present clear messages. The IoT layer sends data to ThingSpeak for monitoring and visualisation. A Telegram chatbot delivers real-time alerts for events such as a visitor at the door or an emergency situation, directly on the user’s phone. The solution also includes a voice assistant that converts voice to text, reads written replies aloud and displays messages for deaf users.</p>
+      </section>
+      <section class="project-detail-section">
+        <h2>Key features</h2>
+        <ul>
+          <li><strong>Visual feedback:</strong> messages and system information displayed on an LCD screen.</li>
+          <li><strong>Connected alerts:</strong> Telegram chatbot notifications for door, emergency and ambulance scenarios.</li>
+          <li><strong>IoT monitoring:</strong> sensor data sent to ThingSpeak for remote visualisation.</li>
+          <li><strong>Voice assistance:</strong> voice-to-text and text-to-speech support for accessible communication.</li>
+          <li><strong>Inclusive design:</strong> technology focused on practical support for deaf and mute users.</li>
+          <li><strong>Modular solution:</strong> hardware and AI components that can evolve independently.</li>
+        </ul>
+      </section>
+      <section class="project-presentation">
+        <h2>Project presentation</h2>
+        <p>Download the presentation to explore the project architecture, IoT network, alert scenarios and application demonstration in more detail.</p>
+        <a href="assets/assistive-technology-project-presentation.pptx" class="project-link btn-primary" download>Download the presentation</a>
+      </section>
+      <div class="assistive-projects">
+        <section class="assistive-project-card">
+          <img src="assets/imgs/assistive-electronic-system.png" alt="Electronic assistive system with an Arduino, LCD display and breadboard">
+          <div class="assistive-project-content">
+            <p class="project-kicker">Part 1</p>
+            <h2>Electronic system</h2>
+            <p>The electronic module uses an Arduino, LCD display and connected components to provide clear, real-time information and notifications.</p>
+            <div class="project-technologies"><span class="tech-tag">Arduino</span><span class="tech-tag">LCD</span><span class="tech-tag">Electronics</span><span class="tech-tag">Embedded Systems</span></div>
+          </div>
+        </section>
+        <section class="assistive-project-card">
+          <img src="assets/imgs/assistive-ai-assistant.png" alt="AI telephone assistant interface">
+          <div class="assistive-project-content">
+            <p class="project-kicker">Part 2</p>
+            <h2>AI assistance</h2>
+            <p>A voice assistant and Telegram chatbot designed to facilitate communication, send alerts and make interactions more accessible.</p>
+            <div class="project-technologies"><span class="tech-tag">AI</span><span class="tech-tag">Telegram Bot</span><span class="tech-tag">Voice Assistance</span><span class="tech-tag">Accessibility</span></div>
+          </div>
+        </section>
+      </div>
+      <a class="back-home" href="works.html">← Back to my works</a>
+    </article>
+  </main>
+  <footer><p>Built by Fatima Zahra — passion for innovation &amp; digital transformation.</p></footer>
+</body>
+</html>

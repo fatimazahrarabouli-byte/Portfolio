@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Grid-Connected Photovoltaic System with Sliding Mode Control | Fatima Zahra Rabouli</title>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="assets/imgs/logo.png" alt="Fatimazahra logo" class="logo"></a>
+    <nav class="navigation"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About me</a></li><li><a href="resume.html">Resume</a></li><li><a href="experience.html">Experience</a></li><li><a href="works.html" aria-current="page">My works</a></li><li><a href="certificates.html">Certificates</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  </header>
+  <hr>
+  <main class="page-main">
+    <article class="project-detail page-container">
+      <div class="page-heading">
+        <p class="project-kicker">MATLAB / Simulink project</p>
+        <h1>Grid-Connected Photovoltaic System <span class="aboutTitle">with Sliding Mode Control</span></h1>
+        <p>Modélisation et simulation d’un système photovoltaïque avec MPPT par commande par mode glissant.</p>
+      </div>
+      <img class="project-dashboard project-cover-image" src="assets/imgs/pv-grid-sliding-mode-cover.png" alt="Illustration d’un système photovoltaïque connecté au réseau avec commande par mode glissant">
+      <section class="project-about">
+        <h2>About the project</h2>
+        <p>Ce projet étudie la commande par mode glissant d’un système photovoltaïque connecté au réseau. L’objectif est d’extraire efficacement l’énergie fournie par le panneau PV et de l’injecter vers le réseau à travers une chaîne de conversion simulée dans MATLAB/Simulink.</p>
+        <p>La commande par mode glissant est une approche non linéaire qui contraint le système à évoluer sur une surface de glissement. Elle apporte une réponse rapide et une forte robustesse face aux variations du système. Le projet utilise cette approche pour la commande MPPT.</p>
+      </section>
+      <section class="project-detail-section">
+        <h2>Project objectives</h2>
+        <ul>
+          <li>Modéliser un générateur photovoltaïque connecté au réseau.</li>
+          <li>Concevoir une commande MPPT par mode glissant pour rechercher le point de puissance maximale.</li>
+          <li>Modéliser le convertisseur DC-DC et l’onduleur triphasé.</li>
+          <li>Analyser le comportement du système dans MATLAB/Simulink.</li>
+          <li>Vérifier la stabilité de la commande à l’aide de l’approche de Lyapunov.</li>
+        </ul>
+      </section>
+      <section class="project-detail-section">
+        <h2>Technologies used</h2>
+        <div class="project-technologies"><span class="tech-tag">MATLAB</span><span class="tech-tag">Simulink</span><span class="tech-tag">Photovoltaic Systems</span><span class="tech-tag">Sliding Mode Control</span><span class="tech-tag">MPPT</span><span class="tech-tag">Power Electronics</span></div>
+      </section>
+      <section class="project-detail-section">
+        <h2>System architecture</h2>
+        <ol>
+          <li><strong>PV generator</strong> — produces electrical energy according to irradiance and temperature inputs.</li>
+          <li><strong>DC-DC converter and MPPT-SMC</strong> — controls the duty cycle to operate the PV generator near its maximum power point.</li>
+          <li><strong>DC link and inverter</strong> — converts the DC energy into three-phase AC energy.</li>
+          <li><strong>Grid connection</strong> — connects the inverter output to the electrical network and measures the system signals.</li>
+        </ol>
+      </section>
+      <section class="project-simulation-result">
+        <h2>MATLAB/Simulink simulation system</h2>
+        <p>The MATLAB/Simulink model represents the complete photovoltaic conversion chain, including the PV panel, MPPT-SMC controller, DC-DC converter, DC link, inverter and grid connection. It provides a visual environment to simulate the system and analyse its electrical signals.</p>
+        <img class="project-dashboard" src="assets/imgs/pv-grid-sliding-mode-simulink.png" alt="MATLAB Simulink simulation model of the grid-connected photovoltaic system">
+      </section>
+      <section class="project-simulation-result">
+        <h2>Simulation results</h2>
+        <p>The simulation output shows three balanced sinusoidal waveforms, corresponding to the three-phase signals at the grid-connected inverter output.</p>
+        <img class="project-dashboard" src="assets/imgs/pv-grid-sliding-mode-simulation-results.png" alt="Three-phase sinusoidal waveforms from the MATLAB Simulink simulation">
+      </section>
+      <section class="project-presentation">
+        <h2>Project presentation</h2>
+        <p>Download the presentation to explore the photovoltaic model, the sliding mode control design and the MATLAB/Simulink simulation in more detail.</p>
+        <a href="assets/pv-grid-sliding-mode-presentation.pptx" class="project-link btn-primary" download>Download the presentation</a>
+      </section>
+      <section class="project-detail-section">
+        <h2>Key features</h2>
+        <ul>
+          <li><strong>MPPT by sliding mode control:</strong> tracks the photovoltaic maximum power point.</li>
+          <li><strong>Nonlinear control:</strong> adapted to nonlinear photovoltaic and power-electronic dynamics.</li>
+          <li><strong>Grid-connected simulation:</strong> models the full chain from PV generation to AC grid injection.</li>
+          <li><strong>Stability analysis:</strong> uses a Lyapunov-based approach for the control design.</li>
+          <li><strong>Simulink model:</strong> visual model for testing and analysing system behaviour.</li>
+        </ul>
+      </section>
+      <a class="back-home" href="works.html">← Back to my works</a>
+    </article>
+  </main>
+  <footer><p>Built by Fatima Zahra — passion for innovation &amp; digital transformation.</p></footer>
+</body>
+</html>
